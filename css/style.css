@@ -192,6 +192,51 @@ button:hover{filter:brightness(1.05)}
     padding: 0 1rem;
   }
 }
+/* ---------- About page bio layout (mobile-first) ---------- */
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* centers the image wrapper on mobile */
+  gap: 1.25rem;
+  max-width: 900px;         /* keeps the whole bio from going edge-to-edge */
+  margin: 0 auto;           /* centers the whole bio block */
+  padding: 0 1.25rem;       /* breathing room from screen edges */
+}
+
+.bio-pic {
+  display: block;
+  width: 100%;
+  max-width: 320px;         /* image never gets too huge on mobile */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin: 0 auto;           /* strong centering for the image itself */
+}
+
+.bio-text {
+  width: 100%;
+  line-height: 1.65;
+  padding: 0 1rem;          /* keeps text away from edges on phones */
+  text-align: left;
+}
+
+/* Side-by-side on larger screens, still with comfortable padding */
+@media (min-width: 768px) {
+  .bio {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 1.25rem;     /* keep some side padding on desktop too */
+    gap: 2rem;
+  }
+  .bio-pic {
+    margin: 0;              /* align with text when side-by-side */
+    max-width: 360px;
+  }
+  .bio-text {
+    padding: 0 0 0 1rem;    /* a little space between image and text */
+    max-width: 52ch;        /* readable line length */
+  }
+}
 /* ---------- Footer ---------- */
 footer{
   text-align:center; background:var(--surface); color:var(--muted);
