@@ -5,58 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact | Jack's Kitchen</title>
   <meta name="description" content="Contact Jack's Kitchen for private chef services and events."/>
-  <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- Fonts first -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+  <!-- Header -->
   <header>
-  <div class="wrap">
-    <div class="brand">
-      <h1>Jack's Kitchen</h1>
+    <div class="wrap">
+      <div class="brand">
+        <h1>Jack's Kitchen</h1>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+        <span>Menu</span>
+      </button>
+
+      <nav id="siteNav" class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="menus.html">Menus</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      <span>Menu</span>
-    </button>
+  <!-- Main -->
+  <main class="container section">
+    <h2 class="center">Get in Touch</h2>
+    <p class="center" style="max-width:620px;margin:0 auto 1.25rem;color:#6b7280">
+      Tell us about your event and we’ll get back to you shortly.
+    </p>
 
-    <nav id="siteNav" class="nav-links" aria-label="Main">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="menus.html">Menus</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-  <main class="container">
-    <h2>Contact</h2>
-    <p>Phone: <strong>(xxx) xxx-xxxx</strong> &nbsp;·&nbsp; Email: <strong>hello@example.com</strong></p>
-
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" aria-label="Contact form">
       <input type="hidden" name="form-name" value="contact" />
       <p style="display:none">
         <label>Don’t fill this out: <input name="bot-field" /></label>
       </p>
 
-      <p><label>Name*<br><input type="text" name="name" required></label></p>
-      <p><label>Email*<br><input type="email" name="email" required></label></p>
-      <p><label>Phone<br><input type="tel" name="phone"></label></p>
-      <p><label>Event Date<br><input type="date" name="date"></label></p>
-      <p><label>Guest Count<br><input type="number" name="guests" min="1"></label></p>
-      <p><label>Message*<br><textarea name="message" required></textarea></label></p>
+      <p>
+        <label for="name">Name*</label><br>
+        <input id="name" type="text" name="name" required autocomplete="name" placeholder="Your full name">
+      </p>
+
+      <p>
+        <label for="email">Email*</label><br>
+        <input id="email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+      </p>
+
+      <p>
+        <label for="phone">Phone</label><br>
+        <input id="phone" type="tel" name="phone" autocomplete="tel" placeholder="(xxx) xxx-xxxx">
+      </p>
+
+      <p>
+        <label for="date">Event Date</label><br>
+        <input id="date" type="date" name="date">
+      </p>
+
+      <p>
+        <label for="guests">Guest Count</label><br>
+        <input id="guests" type="number" name="guests" min="1" inputmode="numeric" placeholder="e.g., 12">
+      </p>
+
+      <p>
+        <label for="message">Message*</label><br>
+        <textarea id="message" name="message" required placeholder="Event details, location, dietary needs, etc."></textarea>
+      </p>
 
       <p><button type="submit">Send</button></p>
     </form>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Jack's Kitchen · Walla Walla, WA</p>
   </footer>
+
+  <!-- Mobile nav script -->
   <script src="js/main.js"></script>
 </body>
 </html>

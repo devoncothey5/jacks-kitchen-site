@@ -1,10 +1,17 @@
 // Simple mobile nav toggle
-const btn = document.getElementById('menuBtn');
-const html = document.documentElement;
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('menuBtn');
+  const html = document.documentElement;
 
-if (btn) {
+  console.log('[nav] script loaded'); // confirm script runs
+  if (!btn) {
+    console.warn('[nav] menuBtn not found');
+    return;
+  }
+
   btn.addEventListener('click', () => {
     const isOpen = html.classList.toggle('nav-open');
     btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    console.log('[nav] toggled', isOpen);
   });
-}
+});
