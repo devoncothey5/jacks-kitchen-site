@@ -11,7 +11,7 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
 <!-- Styles -->
-<link href="css/style.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
 <!-- Open Graph / Twitter -->
 <meta content="Jack's Kitchen | Private Chef in Walla Walla" property="og:title"/>
 <meta content="Wine-paired private dinners, small-event catering, and custom meal prep in Walla Walla, WA." property="og:description"/>
@@ -19,7 +19,8 @@
 <meta content="https://jackskitchen.netlify.app/" property="og:url"/>
 <meta content="https://jackskitchen.netlify.app/og-default.jpg" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<link href="/favicon.ico" rel="icon"/><link href="https://jackskitchen.netlify.app/" rel="canonical"/><meta content="Jack's Kitchen | Private Chef in Walla Walla" name="twitter:title"/><meta content="Wine-paired private dinners, small-event catering, and custom meal prep in Walla Walla, WA." name="twitter:description"/><meta content="https://jackskitchen.netlify.app/og-default.jpg" name="twitter:image"/><link href="/site.webmanifest" rel="manifest"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Caterer","name":"Jack's Kitchen","url":"https://jackskitchen.netlify.app/","areaServed":["Walla Walla, WA"],"servesCuisine":["Contemporary American","Custom Menu"],"priceRange":"$$","telephone":"REPLACE-WITH-YOUR-PHONE","image":"https://jackskitchen.netlify.app/og-default.jpg","description":"Private chef dinners, small-event catering, and custom meal prep in Walla Walla, WA.","address":{"@type":"PostalAddress","addressLocality":"Walla Walla","addressRegion":"WA","addressCountry":"US"}}</script></head>
+<link href="/favicon.ico" rel="icon"/><link href="https://jackskitchen.netlify.app/" rel="canonical"/><meta content="Jack's Kitchen | Private Chef in Walla Walla" name="twitter:title"/><meta content="Wine-paired private dinners, small-event catering, and custom meal prep in Walla Walla, WA." name="twitter:description"/><meta content="https://jackskitchen.netlify.app/og-default.jpg" name="twitter:image"/></head>
+<body>
 <!-- Header -->
 <header>
 <div class="wrap">
@@ -33,26 +34,20 @@
 <span>Menu</span>
 </button>
 <nav aria-label="Main" class="nav-links" id="siteNav">
-<a aria-current="page" href="/">Home</a>
-<a href="/about">About</a>
-<a href="/services">Services</a>
-<a href="/menus">Menus</a>
-<a href="/gallery">Gallery</a>
-<a href="/contact">Contact</a>
+<a aria-current="page" href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="menus.html">Menus</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
 </nav>
 </div>
 </header>
 <!-- Hero Section -->
-<section class="hero">
-<h2>Private Chef in Walla Walla</h2>
-<p>Wine-paired dinners, small events, and custom meal prep.</p>
-<p>
-<a class="cta" href="/contact">Book a Consultation</a>
-       
-      <a class="btn-outline" href="/services">Learn More</a>
-</p>
-</section>
-<main class="container section" id="main">
+
+<main class="container section"><section class="hero"><picture><source srcset="/images/chef-plating-1153.webp 1153w,
+                    /images/chef-plating-1153.webp 1153w,
+                    /images/chef-plating-1000.webp 1000w" type="image/webp"/><img alt="Chef plating scallops with sauce during a private dinner service." height="2048" src="/images/chef-plating-1153.jpg" width="1153"/></picture><div class="hero-text"><h1>Wine‑paired private dinners in Walla Walla</h1><p>Seasonal menus, local ingredients, and seamless service.</p></div></section>
 <div class="leads">
 <div class="card">
 <h3>Winery Pairings</h3>
@@ -73,8 +68,26 @@
 <p>© 2025 Jack's Kitchen · Walla Walla, WA</p>
 </footer>
 <!-- LocalBusiness schema (optional—fill in phone/email/url/image when ready) -->
-
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Jack's Kitchen",
+    "url": "https://YOUR-SITE.netlify.app/",
+    "image": "https://YOUR-SITE.netlify.app/assets/images/hero.jpg",
+    "description": "Private chef services, small-event catering, and custom meal prep in Walla Walla, WA.",
+    "areaServed": "Walla Walla, WA",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Walla Walla",
+      "addressRegion": "WA",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-555-555-5555",
+    "email": "hello@example.com"
+  }
+  </script>
 <!-- Mobile nav script -->
-<script defer="" src="js/main.min.js"></script>
+<script defer="" src="js/main.js"></script>
 </body>
 </html>
