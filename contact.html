@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Jack's Kitchen</title>
+  <meta name="description" content="Contact Jack's Kitchen for private chef services and events."/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Jack's Kitchen</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="menus.html">Menus</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Contact</h2>
+    <p>Phone: <strong>(xxx) xxx-xxxx</strong> &nbsp;·&nbsp; Email: <strong>hello@example.com</strong></p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
+      <p style="display:none">
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
+
+      <p><label>Name*<br><input type="text" name="name" required></label></p>
+      <p><label>Email*<br><input type="email" name="email" required></label></p>
+      <p><label>Phone<br><input type="tel" name="phone"></label></p>
+      <p><label>Event Date<br><input type="date" name="date"></label></p>
+      <p><label>Guest Count<br><input type="number" name="guests" min="1"></label></p>
+      <p><label>Message*<br><textarea name="message" required></textarea></label></p>
+
+      <p><button type="submit">Send</button></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jack's Kitchen · Walla Walla, WA</p>
+  </footer>
+</body>
+</html>
