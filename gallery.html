@@ -1,62 +1,87 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Gallery | Jack's Kitchen</title>
-<meta content="Photo gallery of dishes, events, and behind-the-scenes." name="description"/>
-<!-- Fonts first -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
-<!-- Styles -->
-<link href="css/style.css" rel="stylesheet"/>
-<link href="/favicon.ico" rel="icon"/><link href="https://jackskitchen.netlify.app/gallery" rel="canonical"/><meta content="website" property="og:type"/><meta content="https://jackskitchen.netlify.app/gallery" property="og:url"/><meta content="Gallery | Jack's Kitchen" property="og:title"/><meta content="Photo gallery of dishes, events, and behind-the-scenes." property="og:description"/><meta content="https://jackskitchen.netlify.app/og-default.jpg" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Gallery | Jack's Kitchen" name="twitter:title"/><meta content="Photo gallery of dishes, events, and behind-the-scenes." name="twitter:description"/><meta content="https://jackskitchen.netlify.app/og-default.jpg" name="twitter:image"/></head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Jack's Kitchen</title>
+  <meta name="description" content="Photo gallery of dishes, events, and behind-the-scenes."/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- Meta -->
+  <link rel="icon" href="/favicon.ico"/>
+  <link rel="canonical" href="https://jackskitchen.netlify.app/gallery"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://jackskitchen.netlify.app/gallery"/>
+  <meta property="og:title" content="Gallery | Jack's Kitchen"/>
+  <meta property="og:description" content="Photo gallery of dishes, events, and behind-the-scenes."/>
+  <meta property="og:image" content="https://jackskitchen.netlify.app/og-default.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Gallery | Jack's Kitchen"/>
+  <meta name="twitter:description" content="Photo gallery of dishes, events, and behind-the-scenes."/>
+  <meta name="twitter:image" content="https://jackskitchen.netlify.app/og-default.jpg"/>
+</head>
 <body>
-<!-- Header -->
-<header>
-<div class="wrap">
-<div class="brand">
-<h1>Jack's Kitchen</h1>
-</div>
-<button aria-controls="siteNav" aria-expanded="false" class="menu-btn" id="menuBtn">
-<svg fill="none" height="18" stroke="currentColor" viewbox="0 0 24 24" width="18">
-<path d="M3 6h18M3 12h18M3 18h18"></path>
-</svg>
-<span>Menu</span>
-</button>
-<nav aria-label="Main" class="nav-links" id="siteNav">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="menus.html">Menus</a>
-<a aria-current="page" href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav>
-</div>
-</header>
-<!-- Main -->
-<main class="container section">
-<h2 class="center">Gallery</h2>
-<p class="center" style="max-width:640px;margin:0 auto 1.25rem;color:#6b7280">
-      A look at dishes, events, and behind-the-scenes moments. Replace these placeholders with real photos in <code>assets/images/</code>.
+  <!-- Header -->
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <h1>Jack's Kitchen</h1>
+      </div>
+      <button id="menuBtn" class="menu-btn" aria-controls="siteNav" aria-expanded="false">
+        <svg aria-hidden="true" fill="none" height="18" width="18" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M3 6h18M3 12h18M3 18h18"></path>
+        </svg>
+        <span>Menu</span>
+      </button>
+      <nav id="siteNav" class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="menus.html">Menus</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container section">
+    <h2 class="center hidden">Gallery</h2>
+    <p class="center" style="max-width:640px;margin:0 auto 1.25rem;color:#6b7280">
+      A look at dishes, events, and behind-the-scenes moments.
     </p>
-<!-- Responsive image grid -->
-<div class="grid">
-<img alt="Dish 1" loading="lazy" src="assets/images/sample1.jpg"/>
-<img alt="Dish 2" loading="lazy" src="assets/images/sample2.jpg"/>
-<img alt="Dish 3" loading="lazy" src="assets/images/sample3.jpg"/>
-<img alt="Dish 4" loading="lazy" src="assets/images/sample4.jpg"/>
-<img alt="Dish 5" loading="lazy" src="assets/images/sample5.jpg"/>
-<img alt="Dish 6" loading="lazy" src="assets/images/sample6.jpg"/>
-</div>
-<section class="gallery-grid"><h2 class="center">Gallery</h2><ul class="grid"><li><img alt="Deep-dish margherita pizza with fresh basil." height="533" loading="lazy" src="/images/deep-dish-pizza-400.webp" width="400"/></li><li><img alt="Vegetable pizza with red onion, cherry tomatoes, herbs, and edible flowers." height="865" loading="lazy" src="/images/veggie-pizza-400.webp" width="400"/></li><li><img alt="Chef Jack holding a crispy chicken slider with greens." height="614" loading="lazy" src="/images/jack-portrait-400.webp" width="400"/></li><li><img alt="Catered brunch spread with mini quiches, pastries, parfaits, and charcuterie." height="711" loading="lazy" src="/images/catering-spread-400.webp" width="400"/></li><li><img alt="Chilaquiles with fried egg, cotija cheese, avocado, and radish." height="711" loading="lazy" src="/images/chilaquiles-400.webp" width="400"/></li><li><img alt="Focaccia decorated with tomatoes, red onion, rosemary, and thyme." height="710" loading="lazy" src="/images/focaccia-art-400.webp" width="400"/></li></ul></section></main>
-<!-- Footer -->
-<footer>
-<p>© 2025 Jack's Kitchen · Walla Walla, WA</p>
-</footer>
-<!-- Mobile nav script -->
-<script defer="" src="js/main.js"></script>
+    <ul class="grid">
+      <li class="hidden"><img src="/images/deep-dish-pizza-400.webp"
+           alt="Deep-dish margherita pizza with fresh basil."
+           width="400" height="533" loading="lazy"/></li>
+      <li class="hidden"><img src="/images/jack-portrait-400.webp"
+           alt="Chef Jack holding a crispy chicken slider with greens."
+           width="400" height="614" loading="lazy"/></li>
+      <li class="hidden"><img src="/images/catering-spread-400.webp"
+           alt="Catered brunch spread with mini quiches, pastries, parfaits, and charcuterie."
+           width="400" height="711" loading="lazy"/></li>
+      <li class="hidden"><img src="/images/chilaquiles-400.webp"
+           alt="Chilaquiles with fried egg, cotija cheese, avocado, and radish."
+           width="400" height="711" loading="lazy"/></li>
+      <li class="hidden"><img src="/images/focaccia-art-400.webp"
+           alt="Focaccia decorated with tomatoes, red onion, rosemary, and thyme."
+           width="400" height="710" loading="lazy"/></li>
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Jack's Kitchen · Walla Walla, WA</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script defer src="js/main.js"></script>
 </body>
 </html>
