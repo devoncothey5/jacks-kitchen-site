@@ -6,12 +6,23 @@
   <title>Gallery | Jack's Kitchen</title>
   <meta name="description" content="Photo gallery of dishes, events, and behind-the-scenes."/>
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="wrap">
-    <h1>Jack's Kitchen</h1>
-    <nav>
+  <div class="wrap">
+    <div class="brand">
+      <h1>Jack's Kitchen</h1>
+    </div>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <span>Menu</span>
+    </button>
+
+    <nav id="siteNav" class="nav-links" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -20,7 +31,7 @@
       <a href="contact.html">Contact</a>
     </nav>
   </div>
-  </header>
+</header>
 
   <main class="container">
     <h2>Gallery</h2>
@@ -30,5 +41,6 @@
   <footer>
     <p>&copy; 2025 Jack's Kitchen · Walla Walla, WA</p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
