@@ -152,7 +152,46 @@ button{
   padding:.8rem 1.2rem; border-radius:10px; font-weight:700; cursor:pointer;
 }
 button:hover{filter:brightness(1.05)}
+/* ---------- About page bio layout ---------- */
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;         /* center image on mobile */
+  gap: 1.5rem;
+  max-width: 900px;            /* keeps it from stretching full screen */
+  margin: 0 auto;              /* centers the whole block */
+  padding: 0 1.25rem;          /* adds space from left/right edges */
+}
 
+.bio-pic {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.bio-text {
+  flex: 1;
+  color: var(--text);
+  line-height: 1.65;
+  padding: 0 0.5rem;           /* extra breathing room from the edges */
+  text-align: left;
+}
+
+/* Side-by-side on larger screens */
+@media (min-width: 768px) {
+  .bio {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .bio-pic {
+    margin: 0;
+  }
+  .bio-text {
+    padding: 0 1rem;
+  }
+}
 /* ---------- Footer ---------- */
 footer{
   text-align:center; background:var(--surface); color:var(--muted);
